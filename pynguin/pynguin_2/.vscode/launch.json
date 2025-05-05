@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python Debugger: Current File",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Run Pynguin",
+        "type": "python",
+        "request": "launch",
+        "module": "pynguin",
+        "args": [
+          "--project-path", ".",
+          "--module-name", "put_code_2",
+          "--output-path", "./generated_tests"
+        ],
+        "env": {
+          "PYNGUIN_DANGER_AWARE": "true"
+        },
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  
